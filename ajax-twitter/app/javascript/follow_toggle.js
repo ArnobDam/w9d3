@@ -4,10 +4,13 @@ export default class FollowToggle {
   constructor(toggleButton) {
     // Your code here
     this.toggleButton = toggleButton;
+    toggleButton.addEventListener("click", (event) => { this.handleClick(event).bind(this) })
   }
 
   async handleClick(event) {
     // Your code here
+    event.preventDefault();
+    console.log(this.followState);
   }
 
   async follow() {
