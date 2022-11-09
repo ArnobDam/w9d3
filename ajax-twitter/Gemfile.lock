@@ -183,7 +183,11 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+<<<<<<< HEAD
   x86_64-linux
+=======
+  x86_64-darwin-21
+>>>>>>> 5d86f510f598b1fc8632c2334717a4848a37c1ac
 
 DEPENDENCIES
   annotate
