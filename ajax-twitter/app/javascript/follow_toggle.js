@@ -4,7 +4,7 @@ export default class FollowToggle {
   constructor(toggleButton) {
     // Your code here
     this.toggleButton = toggleButton;
-    toggleButton.addEventListener("click", (event) => { this.handleClick(event).bind(this) })
+    toggleButton.addEventListener("click", this.handleClick.bind(this) )
   }
 
   async handleClick(event) {
